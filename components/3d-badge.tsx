@@ -199,39 +199,11 @@ export default function Badge({ onClose, selectedImage }: BadgeProps) {
             border: 'none' 
           }}
         />
-        <select
-          value={motive}
-          onChange={(e) => setMotive(e.target.value)}
-          style={{
-            marginRight: '10px',
-            padding: '5px',
-            background: 'rgba(0, 0, 0, 0.1)',
-            color: 'black',
-            border: 'none'
-          }}
-        >
-          <option value="Arbeid">Arbeid</option>
-          <option value="Besøk">Besøk</option>
-          <option value="Konferanse">Konferanse</option>
-        </select>
+       
         <input
           type="color"
           value={badgeColor}
           onChange={(e) => setBadgeColor(e.target.value)}
-          style={{
-            marginRight: '10px',
-            padding: '0',
-            background: 'none',
-            border: 'none',
-            width: '30px',
-            height: '30px',
-            cursor: 'pointer'
-          }}
-        />
-        <input
-          type="color"
-          value={backgroundColor}
-          onChange={(e) => setBackgroundColor(e.target.value)}
           style={{
             marginRight: '10px',
             padding: '0',
