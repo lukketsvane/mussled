@@ -2,44 +2,42 @@ import React from 'react'
 import Image from 'next/image'
 
 const posters = [
-  { id: 1, title: 'blur', image: '/illustrated/kråke.png?height=450&width=300' },
-  { id: 2, title: 'david bowie', image: '/illustrated/flamingo.png?height=450&width=300' },
-  { id: 3, title: 'television', image: '/illustrated/bakterie.png?height=450&width=300' },
-  { id: 4, title: 'white flag', image: '/illustrated/kval.png?height=450&width=300' },
-  { id: 5, title: 'the replacements', image: '/placeholder.svg?height=450&width=300' },
-  { id: 6, title: 'the velvet underground', image: '/placeholder.svg?height=450&width=300' },
-  { id: 7, title: 'public enemy', image: '/placeholder.svg?height=450&width=300' },
-  { id: 8, title: 'pixies', image: '/placeholder.svg?height=450&width=300' },
-  { id: 9, title: 'pearl jam', image: '/placeholder.svg?height=450&width=300' },
-  { id: 10, title: 'joy division', image: '/placeholder.svg?height=450&width=300' },
-  { id: 11, title: 'sex pistols', image: '/placeholder.svg?height=450&width=300' },
-  { id: 12, title: 'the modern lovers', image: '/placeholder.svg?height=450&width=300' },
-  { id: 13, title: 'black flag', image: '/placeholder.svg?height=450&width=300' },
-  { id: 14, title: 'the runaways', image: '/placeholder.svg?height=450&width=300' },
-  { id: 15, title: 'ziggy stardust', image: '/placeholder.svg?height=450&width=300' },
+  { id: 1, title: 'kråke', image: '/illustrated/kråke.png' },
+  { id: 2, title: 'flamingo', image: '/illustrated/flamingo.png' },
+  { id: 3, title: 'bakterie', image: '/illustrated/skjell-symbol.png' },
+  { id: 4, title: 'kval', image: '/illustrated/kval.png' },
+  { id: 5, title: 'algae', image: '/illustrated/algae.png' },
+  { id: 6, title: 'kval-og-krill', image: '/illustrated/kval-og-krill.png' },
+  { id: 7, title: 'orden', image: '/illustrated/orden.png' },
+  { id: 8, title: 'orden-2', image: '/illustrated/orden-2.png' },
+  { id: 9, title: 'orden-3', image: '/illustrated/' },
+  { id: 10, title: 'orden-3-1', image: '/illustrated/orden-3-1.png' },
+  { id: 11, title: 'skjell-skjold', image: '/illustrated/skjell-skjold.png' },
 ]
 
 export function Avlosning() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-5 gap-2 md:gap-4">
-      {[0, 1, 2].map((row) => (
-        <React.Fragment key={row}>
-          {posters.slice(row * 5, (row + 1) * 5).map((poster, index) => (
-            <div key={poster.id} className="flex flex-col">
-              <Image
-                src={poster.image}
-                alt={poster.title}
-                width={300}
-                height={450}
-                className="w-full h-auto"
-              />
-              {row < 2 && (
-                <div className="h-1 bg-black mt-2 mb-4" />
-              )}
-            </div>
-          ))}
-        </React.Fragment>
-      ))}
+    <div className="mt-4 -mx-2"> {/* Changed to mt-4 and added negative margin on x-axis */}
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-2 md:gap-4">
+        {[0, 1, 2].map((row) => (
+          <React.Fragment key={row}>
+            {posters.slice(row * 5, (row + 1) * 5).map((poster, index) => (
+              <div key={poster.id} className="flex flex-col">
+                <Image
+                  src={poster.image}
+                  alt={poster.title}
+                  width={300}
+                  height={450}
+                  className="w-full h-auto"
+                />
+                {row < 2 && (
+                  <div className="h-1 bg-black mt-2 mb-4" />
+                )}
+              </div>
+            ))}
+          </React.Fragment>
+        ))}
+      </div>
     </div>
   )
 }
