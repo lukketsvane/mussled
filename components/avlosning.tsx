@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 
 const posters = [
-  { id: 1, title: 'blur', image: '/placeholder.svg?height=450&width=300' },
-  { id: 2, title: 'david bowie', image: '/placeholder.svg?height=450&width=300' },
-  { id: 3, title: 'television', image: '/placeholder.svg?height=450&width=300' },
-  { id: 4, title: 'white flag', image: '/placeholder.svg?height=450&width=300' },
+  { id: 1, title: 'blur', image: '/illustrated/kråke.png?height=450&width=300' },
+  { id: 2, title: 'david bowie', image: '/illustrated/flamingo.png?height=450&width=300' },
+  { id: 3, title: 'television', image: '/illustrated/bakterie.png?height=450&width=300' },
+  { id: 4, title: 'white flag', image: '/illustrated/kval.png?height=450&width=300' },
   { id: 5, title: 'the replacements', image: '/placeholder.svg?height=450&width=300' },
   { id: 6, title: 'the velvet underground', image: '/placeholder.svg?height=450&width=300' },
   { id: 7, title: 'public enemy', image: '/placeholder.svg?height=450&width=300' },
