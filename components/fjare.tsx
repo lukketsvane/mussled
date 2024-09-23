@@ -45,7 +45,7 @@ export function Fjare() {
   }
 
   if (isLoading) {
-    return <div className="text-center py-10">Loading images...</div>
+    return <div className="text-center py-10"></div>
   }
 
   if (error) {
@@ -53,7 +53,7 @@ export function Fjare() {
   }
 
   if (images.length === 0) {
-    return <div className="text-center py-10">No images found.</div>
+    return <div className="text-center py-10"></div>
   }
 
   if (selectedImage) {

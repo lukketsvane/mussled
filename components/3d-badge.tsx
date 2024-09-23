@@ -160,7 +160,6 @@ interface BadgeProps {
 
 export default function Badge({ onClose, selectedImage }: BadgeProps) {
   const [name, setName] = useState('Iver R Finne')
-  const [motive, setMotive] = useState('Arbeid')
   const [badgeColor, setBadgeColor] = useState('#ffffff')
   const [backgroundColor, setBackgroundColor] = useState('rgba(255, 255, 255, 0.5)')
 

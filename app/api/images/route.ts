@@ -3,7 +3,7 @@ import fs from 'fs'
 import path from 'path'
 
 export async function GET() {
-  const imageDirectories = ['figure', 'korall_1', 'korall_m', 'korall_s', 'noregs_dyr']
+  const imageDirectories = ['figure', 'korall_1', 'korall_m', 'korall_s', 'div', 'noregs_dyr']
   let allImages: { name: string; path: string }[] = []
 
   imageDirectories.forEach(dir => {
