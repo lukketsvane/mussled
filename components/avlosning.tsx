@@ -10,9 +10,7 @@ const posters = [
   { id: 6, title: 'kval-og-krill', image: '/illustrated/kval-og-krill.png' },
   { id: 7, title: 'orden', image: '/illustrated/orden.png' },
   { id: 8, title: 'orden-2', image: '/illustrated/orden-2.png' },
-  { id: 9, title: 'orden-3', image: '/illustrated/' },
-  { id: 10, title: 'orden-3-1', image: '/illustrated/orden-3-1.png' },
-  { id: 11, title: 'skjell-skjold', image: '/illustrated/skjell-skjold.png' },
+  { id: 9, title: 'skjell-skjold', image: '/illustrated/skjell-skjold.png' },
 ]
 
 export function Avlosning() {

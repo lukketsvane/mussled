@@ -62,7 +62,7 @@ export function Header({ activeTab, setActiveTab }: HeaderProps) {
       <div className="border-t-2 border-b-2 border-black relative z-10">
         <div className="container mx-auto px-4 py-2">
           <nav className="flex justify-end space-x-6">
-            {['avløsning', 'fjære', 'bølgesus'].map((tab) => (
+            {['avløsning', 'fjære', 'exlibris'].map((tab) => (
               <Link 
                 key={tab}
                 href="#" 

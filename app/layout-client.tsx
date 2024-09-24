@@ -5,7 +5,7 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { Avlosning } from '@/components/avlosning'
 import { Fjare } from '@/components/fjare'
-import { Bolgesus } from '@/components/bolgesus'
+import Exlibris from '@/components/exlibris'
 
 export default function ClientLayout({
   children,
@@ -21,8 +21,8 @@ export default function ClientLayout({
         return <Avlosning />
       case 'fjære':
         return <Fjare />
-      case 'bølgesus':
-        return <Bolgesus />
+      case 'exlibris':
+        return <Exlibris />
       default:
         return <div>No content available</div>
     }
